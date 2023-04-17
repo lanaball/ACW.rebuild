@@ -1,2 +1,2 @@
 # ACW.rebuild
-Redesign of NCWNZ
+Redesign of National Council of Women New Zealand
