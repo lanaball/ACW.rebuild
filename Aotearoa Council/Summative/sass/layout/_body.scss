@@ -1,0 +1,111 @@
+body { 
+    background-color: rgb(247, 245, 245); 
+    margin: 0; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color: rgb(8, 8, 8); 
+} 
+
+.banner{
+    position: relative;
+    display: block;
+    height: 75vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+
+.container{
+    margin: 0 5%;
+    height: 80vh;
+
+    @media(min-width: 768px){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 80vh;
+    width: 80vw;
+    margin: auto;
+    padding: 10px 10%;
+    background-color: white;
+}}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    padding: 1%;
+    height: 100vh;
+
+    h2{
+        font-size: 2rem;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 2%;
+    }
+
+    h3{
+        font-size: 1.5rem;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 0;
+    }
+
+    p{ 
+        padding: 0;
+        margin: auto;
+        font-size: 1rem;
+    }
+
+    button{
+        padding: 0;
+    }
+
+    @media(min-width: 768px){
+        height: 70vh;
+    }
+    }
+
+ .grid-three{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2px;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    }
+
+
+.small-card{
+    background-color: rgba(177, 174, 174, 0.314);
+    border-radius: 5px;
+    height: 35vh;
+    width: 90%;
+    padding: 0;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    h3{
+        padding: 5px;
+    }
+
+    p{
+        padding: 5px;
+    }
+
+    &:hover{
+        cursor: pointer;
+        opacity: .8;
+    }
+}

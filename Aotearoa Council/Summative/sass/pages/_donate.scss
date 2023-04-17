@@ -1,0 +1,116 @@
+.container-donate{
+    height: 100%;
+    // border: 5px dashed red;
+}
+
+.cont-dialog{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: rgba(229, 230, 231, 0.303);
+
+    @media(min-width: 768px){
+        grid-template-columns: 300px 1fr;
+    margin: 2% 10%;
+    height: 100%;
+}}
+
+.col-one{
+    // border: 3px solid red;
+    h1{
+        margin: 10% 2%;
+        padding: 2%;
+        font-size: 48px;
+        color: rgba(110, 15, 57, 1);
+    }    
+
+    p{
+        margin: 2%;
+        padding: 2%;
+    }
+}
+
+.col-two{
+    margin: 0;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: .5px solid  rgba(110, 15, 58, 0.164);
+    background-color: rgba(231, 230, 230, 0.411);
+
+    button{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        padding: 5px;
+        margin: 10px;
+    }
+ 
+    input{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        width: 75%;
+        height: 40px;
+        margin: 10px;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: antiquewhite;
+    }
+   
+h1{
+    display: flex;
+    color: rgba(110, 15, 57, 1);
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 0;
+} }
+
+.btn.submit{
+    height: 60px;
+    width: 70%;
+    align-self: center;
+    margin-left: 20px;
+    padding: 0;
+    background-image: linear-gradient(360deg, rgba(228, 14, 14, 0.859), rgba(216, 158, 158, 0.988));
+    background-color: rgba(110, 15, 57, 1);
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bolder;
+    border: none;
+}
+
+.submit:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.grid-donate{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    // border: 2px solid blue;
+    height: 30vh;
+    width: 600px;
+
+    button{
+        width: 50%;
+    }
+}
+
+.grid-donate.amount{
+    height: 100px;
+}
+

@@ -1,0 +1,23 @@
+@media (min-width: 768px){
+    .mobile, 
+    button.hamburger{
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+        background-color: rgba(228, 163, 36, 1);
+        height: 60px;
+    }
+
+    .desktop ul{
+        width: 100vw;
+    }
+
+    .grid-four{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 100vh;
+    }
+
+}
+

@@ -1,0 +1,153 @@
+.grid-one{
+    grid-template-rows: auto;
+}
+
+.hamburger{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: 10;
+    height: 50px;
+    width: 70px;
+    opacity: .70;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.desktop{
+    display: none;
+}
+
+.mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: block;
+    width: 200px;
+    height: 100vh;
+    transform: translateX(-120%);
+    transition: all 500ms;
+    opacity: .70;
+}
+
+.mobile ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 20px;
+    padding: 70px 0;
+    color: black;
+    background-color: rgba(228, 163, 36, 1);
+    z-index: 10;
+    opacity: .75;
+}
+
+.show-mobile{
+    transform: translateX(0%);
+}
+
+
+.desktop ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px 14px 0px 14px;
+    margin-bottom: 0;
+    height: 20px;
+
+    li{
+        padding: 0;
+        margin: 0;
+        height: 30px;
+    }
+
+    .put{
+        position: absolute;
+        right: 15%;
+        top: 15px;
+        margin: 0;
+        padding: 0;
+        height: 40px;
+        border-radius: 2px;
+        border: none;
+      }
+
+    .but{
+        position: absolute;
+        right: 8.5%;
+        top: 15px;
+        margin: 0;
+        padding: 0;
+        height: 40px;
+        width: 100px;
+        background-color: rgba(110, 15, 57, 1);
+        color: rgba(228, 163, 36, 1);
+        border-radius: 2px;
+        border: none;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: rgb(6, 6, 6);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    padding-bottom: 0;
+    margin-top: 20px;
+    font-size: 1rem;
+
+    &:hover{
+        border-bottom: 2px solid black;
+        width: 50%;
+    }
+}
+
+.logo-nav{
+    height: 60px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    padding: 0;
+}
+
+.text{
+    left: 7%;
+    top: 1%;
+    font-size: 2.5rem;
+    font-stretch: condensed;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.click{
+    cursor: pointer;
+    border: none;
+    background-color: rgba(228, 163, 36, 1);
+    text-decoration: none;
+    color: rgb(6, 6, 6);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin-top: 0;
+    font-size: 1rem;
+
+    &:hover{
+        border-bottom: 2px solid black;
+        width: 80px;
+        padding-bottom: 22px;
+    }
+}
+
+vl{
+    height: 50px;
+    position: absolute;
+    top: 3px;
+    margin: 0;
+    padding: 0;
+    border-left: 3px solid white;
+    border-right: none;
+}
